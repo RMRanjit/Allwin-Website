@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospice Care - AllWin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .care-hero {
+            background-image: url('https://via.placeholder.com/1800x1200/6a994e/FFFFFF?text=Compassionate+Hands');
+        }
+        .page-content {
+            background-color: var(--background-color);
+            padding: 1px 0; /* Prevents margin collapse */
+        }
+        .content-block {
+            background-color: var(--white-color);
+            padding: 4rem 2rem;
+            margin: 4rem auto;
+            border-radius: 20px;
+            max-width: 1000px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.05);
+        }
+        .content-block h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        .service-item {
+            background-color: var(--background-color);
+            padding: 2rem;
+            border-radius: 15px;
+        }
+        .service-item h3 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        .cta-section {
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+        .phone-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><img src="images/Logo.png" alt="AllWin Logo"></div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="hospice-care.html">Hospice Care</a></li>
+                    <li><a href="consulting.html">Consulting</a></li>
+                    <li><a href="software.html">Hospice Software</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <button class="hamburger-menu" aria-label="Toggle Menu">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="parallax-section care-hero">
+            <div class="parallax-content">
+                <h1>Focus on Comfort, Dignity, and Quality of Life.</h1>
+                <p>Hospice is a philosophy of care that accepts dying as a natural part of life. We focus on providing comfort and support for patients and their families when a cure is no longer the goal.</p>
+            </div>
+        </section>
+
+        <div class="page-content">
+            <div class="content-block">
+                <h2>What is Hospice Care?</h2>
+                <p>Hospice care is for anyone with a life-limiting illness and a prognosis of six months or less, if the illness runs its normal course. It's about ensuring the patient's final months are lived as fully and comfortably as possible. Families often consider hospice when they notice:</p>
+                <ul>
+                    <li>Frequent hospitalizations or emergency room visits</li>
+                    <li>Uncontrolled pain or other symptoms</li>
+                    <li>A significant decline in ability to perform daily activities</li>
+                    <li>Increasing caregiver burnout</li>
+                </ul>
+            </div>
+
+            <div class="content-block">
+                <h2>Services We Provide</h2>
+                <div class="service-grid">
+                    <div class="service-item">
+                        <h3>Clinical Care</h3>
+                        <p>Expert management of pain and symptoms, regular nursing visits, medical equipment, and medications related to the terminal diagnosis.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Therapies</h3>
+                        <p>Supportive therapies to enhance quality of life, which may include respiratory, speech, or physical therapy as needed.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Emotional & Spiritual Support</h3>
+                        <p>Counseling services, chaplain visits, caregiver training, and bereavement support for the entire family.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-block">
+                <h2>For Families & Caregivers</h2>
+                <p>We're here to support you, too. Our team provides resources and guidance to help you navigate this journey.</p>
+                <ul>
+                    <li><strong>Guides:</strong> "The First 72 Hours on Hospice," "How We Support Caregivers," and "What to Expect During Visits."</li>
+                    <li><strong>Coverage:</strong> Hospice is typically covered by Medicare, Medicaid, and many private insurance plans. We'll help you understand your benefits.</li>
+                </ul>
+            </div>
+            
+            <section class="cta-section">
+                <h2>Ready to talk? We're here 24/7.</h2>
+                <p>Call us for a compassionate, no-obligation conversation.</p>
+                <div class="phone-number">1-800-555-ALLWIN</div>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Request Information</a>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AllWin. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

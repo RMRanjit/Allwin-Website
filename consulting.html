@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospice Consulting - AllWin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .consulting-hero {
+            background-image: url('https://via.placeholder.com/1800x1200/283618/FFFFFF?text=Professional+Guidance');
+        }
+        .page-content {
+            background-color: var(--background-color);
+            padding: 1px 0;
+        }
+        .content-block {
+            background-color: var(--white-color);
+            padding: 4rem 2rem;
+            margin: 4rem auto;
+            border-radius: 20px;
+            max-width: 1100px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.05);
+        }
+        .content-block h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        .content-block .sub-heading {
+            text-align: center;
+            color: var(--secondary-text-color);
+            max-width: 800px;
+            margin: 0 auto 4rem;
+        }
+        .consulting-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 4rem;
+        }
+        .consulting-service {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 3rem;
+            align-items: center;
+            padding: 2rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        .consulting-service:last-child {
+            border-bottom: none;
+        }
+        .consulting-service h3 {
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+        .cta-section {
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><img src="images/Logo.png" alt="AllWin Logo"></div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="hospice-care.html">Hospice Care</a></li>
+                    <li><a href="consulting.html">Consulting</a></li>
+                    <li><a href="software.html">Hospice Software</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <button class="hamburger-menu" aria-label="Toggle Menu">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="parallax-section consulting-hero">
+             <div class="parallax-content">
+                <h1>Expert Guidance for High-Performing Hospice Operations.</h1>
+                <p>Navigate the complexities of the hospice industry, from startup and licensing to scaling and optimization, with a trusted partner.</p>
+            </div>
+        </section>
+
+       <div class="page-content">
+            <div class="content-block">
+                <h2>Our Consulting Services</h2>
+                <p class="sub-heading">We provide tailored solutions for hospice agencies at every stage of their journey, helping you improve quality, compliance, and financial performance.</p>
+                <div class="consulting-grid">
+                    
+                    <div class="consulting-service">
+                        <h3>Starting a Hospice</h3>
+                        <div>
+                            <p>Turn your vision into a reality. We guide you through the complex process of launching a new hospice agency, ensuring you start on a solid foundation of compliance and operational excellence.</p>
+                            <strong>Core Workstreams:</strong>
+                            <ul>
+                                <li>Licensing, Certification & Accreditation</li>
+                                <li>Compliance Framework & Policy Development</li>
+                                <li>Staffing Models & Recruiting Strategy</li>
+                                <li>EMR Selection & Technology Roadmapping</li>
+                                <li>Payer Contracting & Network Development</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="consulting-service">
+                        <h3>Managing & Scaling a Hospice</h3>
+                        <div>
+                            <p>Grow your census and improve your margins. We help established hospices overcome operational challenges and build sustainable growth strategies.</p>
+                            <strong>Focus Areas:</strong>
+                            <ul>
+                                <li>Census Growth & Referral Development</li>
+                                <li>Staffing, Scheduling & Visit Optimization</li>
+                                <li>Clinical Documentation Quality & Audit Readiness</li>
+                                <li>Interim Leadership & Management Training</li>
+                                <li>KPI Dashboard Implementation</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="consulting-service">
+                        <h3>Efficiency & Optimization</h3>
+                        <div>
+                            <p>Do more with less. We leverage process redesign and technology to streamline your workflows, reduce administrative burden, and unlock new efficiencies.</p>
+                            <strong>Example Outcomes:</strong>
+                            <ul>
+                                <li>Reduced documentation time through EHR optimization.</li>
+                                <li>Faster reimbursement with automated billing workflows.</li>
+                                <li>Improved team coordination with telehealth and AI tools.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <section class="cta-section">
+                <h2>Ready to build a better hospice?</h2>
+                <p>Let's discuss your goals. Schedule a complimentary strategy call with our experts.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Book a Strategy Call</a>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AllWin. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

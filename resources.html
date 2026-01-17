@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - AllWin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .resources-hero {
+            background-image: url('https://via.placeholder.com/1800x1200/f4a261/FFFFFF?text=Knowledge+Center');
+        }
+        .page-content {
+            background-color: var(--background-color);
+            padding: 4rem 0;
+        }
+        .content-section {
+            padding: 4rem 2rem;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+        .resource-card {
+            background-color: var(--white-color);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+        .resource-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+        .resource-card-image img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .resource-card-content {
+            padding: 2rem;
+        }
+        .resource-card h3 {
+            margin-top: 0;
+        }
+        .resource-card a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><img src="images/Logo.png" alt="AllWin Logo"></div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="hospice-care.html">Hospice Care</a></li>
+                    <li><a href="consulting.html">Consulting</a></li>
+                    <li><a href="software.html">Hospice Software</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <button class="hamburger-menu" aria-label="Toggle Menu">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="parallax-section resources-hero">
+            <div class="parallax-content">
+                <h1>Guides, Insights, and Support</h1>
+                <p>A collection of resources for patients, families, and hospice professionals.</p>
+            </div>
+        </section>
+
+        <div class="page-content">
+            <section class="content-section">
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <div class="resource-card-image">
+                            <img src="https://via.placeholder.com/400x300/6a994e/FFFFFF?text=Family+Guide" alt="Image for a family guide">
+                        </div>
+                        <div class="resource-card-content">
+                            <h3>Guide: Is It Time for Hospice?</h3>
+                            <p>A plain-language guide to help families understand hospice eligibility and timing.</p>
+                            <a href="#">Read More &rarr;</a>
+                        </div>
+                    </div>
+                     <div class="resource-card">
+                        <div class="resource-card-image">
+                            <img src="https://via.placeholder.com/400x300/283618/FFFFFF?text=Startup+Checklist" alt="Image for a startup checklist">
+                        </div>
+                        <div class="resource-card-content">
+                            <h3>Checklist: Starting a Hospice Agency</h3>
+                            <p>A comprehensive checklist for entrepreneurs navigating the hospice startup process.</p>
+                            <a href="#">Download Now &rarr;</a>
+                        </div>
+                    </div>
+                     <div class="resource-card">
+                        <div class="resource-card-image">
+                            <img src="https://via.placeholder.com/400x300/f4a261/283618?text=Software+ROI" alt="Image for a whitepaper">
+                        </div>
+                        <div class="resource-card-content">
+                            <h3>Whitepaper: The ROI of Hospice Software</h3>
+                            <p>An analysis of how modern EHRs impact quality, compliance, and financial performance.</p>
+                            <a href="#">Read More &rarr;</a>
+                        </div>
+                    </div>
+                     <div class="resource-card">
+                        <div class="resource-card-image">
+                           <img src="https://via.placeholder.com/400x300/606c38/FFFFFF?text=Family+FAQ" alt="Image for an FAQ">
+                        </div>
+                        <div class="resource-card-content">
+                            <h3>FAQ: Hospice Care for Families</h3>
+                            <p>Answers to the most common questions families have when starting hospice care.</p>
+                            <a href="#">Read More &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AllWin. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

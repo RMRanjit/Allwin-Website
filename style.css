@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    --primary-color: #6a994e; /* Calming Green */
+    --secondary-color: #f4a261; /* Warm Yellow/Gold */
+    --text-color: #283618; /* Dark Teal/Grey */
+    --secondary-text-color: #606c38; /* Lighter Grey/Green */
+    --background-color: #fefae0; /* Off-white */
+    --white-color: #ffffff;
+    --heading-font: 'Poppins', sans-serif;
+    --body-font: 'Poppins', sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    margin: 0;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--white-color);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* --- Header & Navigation --- */
+header {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 0.5rem 2rem;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #eee;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+nav.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links ul li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+/* --- Main Content & Sections --- */
+main {
+    padding-top: 70px; /* Offset for fixed header */
+}
+
+section {
+    padding: 6rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* --- Parallax Section --- */
+.parallax-section {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-color);
+    text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+}
+
+.parallax-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(40, 54, 24, 0.4); /* Dark overlay using text color */
+    z-index: 1;
+}
+
+.parallax-content {
+    z-index: 2;
+    position: relative;
+    text-align: center;
+    max-width: 900px;
+    padding: 2rem;
+}
+
+.parallax-content h1 {
+    font-family: var(--heading-font);
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.parallax-content p {
+    font-size: 1.25rem;
+    margin-bottom: 2.5rem;
+}
+
+
+/* --- General Section Styling --- */
+.content-section {
+    background-color: var(--white-color);
+    padding: 5rem 2rem;
+}
+
+/* --- Services Section --- */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    text-align: left;
+    background-color: var(--white-color);
+    border-radius: 20px;
+    padding: 5rem;
+    margin-top: -80px;
+    position: relative;
+    z-index: 3;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
+.service {
+    padding: 1rem;
+}
+
+.service h2 {
+    font-family: var(--heading-font);
+    color: var(--text-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.service p {
+    color: var(--secondary-text-color);
+    font-size: 1rem;
+}
+
+.service a {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+.service a:hover {
+    text-decoration: underline;
+}
+
+/* --- Trust Section --- */
+.trust {
+    background-color: var(--white-color);
+}
+
+.trust h2 {
+    font-family: var(--heading-font);
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 4rem;
+}
+
+.trust-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin-bottom: 4rem;
+}
+
+.trust-item h3 {
+    font-family: var(--heading-font);
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.trust-item p {
+    color: var(--secondary-text-color);
+    font-size: 1.1rem;
+}
+
+.logos {
+    margin-top: 4rem;
+    color: var(--secondary-text-color);
+}
+
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: var(--background-color);
+    border-top: 1px solid #ddd;
+    color: var(--secondary-text-color);
+    font-size: 0.9rem;
+}
+
+/* --- Buttons --- */
+.cta-buttons .btn {
+    text-decoration: none;
+    padding: 0.9rem 2.2rem;
+    border-radius: 30px;
+    font-weight: 600;
+    margin: 0 0.5rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+    border: 2px solid transparent;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(106, 153, 78, 0.4);
+}
+
+.btn-secondary {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: var(--primary-color);
+}
+
+.btn-secondary:hover {
+    transform: translateY(-2px);
+    background-color: var(--white-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Responsive Design & Media Queries --- */
+
+.hamburger-menu {
+    display: none; /* Hidden by default on desktop */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 1001; /* Above the nav links */
+}
+
+.hamburger-bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: var(--text-color);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Tablet and smaller desktops */
+@media (max-width: 1024px) {
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 300px;
+        background-color: var(--white-color);
+        box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 100px;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .nav-links.active {
+        transform: translateX(0);
+    }
+    
+    .nav-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links ul li {
+        margin: 1.5rem 2rem;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+    
+    .hamburger-menu.active .hamburger-bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger-menu.active .hamburger-bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger-menu.active .hamburger-bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    .services, .trust-items, .feature-grid, .team-grid, .resources-grid, .consulting-service, .contact-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .consulting-service {
+        text-align: center;
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+    section, .content-block, .services {
+        padding: 3rem 1rem;
+    }
+
+    .parallax-section {
+        background-attachment: scroll; /* Disable parallax on mobile */
+        min-height: 50vh;
+    }
+    
+    .home-hero {
+         background-image: url('https://via.placeholder.com/800x600/6a994e/FFFFFF?text=Serene+and+Supportive+Hospice+Care');
+    }
+
+    .parallax-content h1, .content-block h2 {
+        font-size: 2.2rem;
+    }
+    
+    .parallax-content p {
+        font-size: 1.1rem;
+    }
+    
+    .cta-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .services {
+        margin-top: 0;
+    }
+}

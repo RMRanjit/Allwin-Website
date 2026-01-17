@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospice Software - AllWin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .software-hero {
+            background-image: url('https://via.placeholder.com/1800x1200/283618/FFFFFF?text=Modern+Hospice+Software');
+        }
+        .page-content {
+            background-color: var(--background-color);
+            padding: 1px 0;
+        }
+        .content-block {
+            background-color: var(--white-color);
+            padding: 4rem 2rem;
+            margin: 4rem auto;
+            border-radius: 20px;
+            max-width: 1200px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.05);
+        }
+        .content-block h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            text-align: left;
+        }
+        .feature-item {
+            background-color: var(--background-color);
+            padding: 2.5rem;
+            border-radius: 15px;
+        }
+        .feature-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .feature-item ul {
+            padding-left: 20px;
+            color: var(--secondary-text-color);
+        }
+        .cta-section {
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><img src="images/Logo.png" alt="AllWin Logo"></div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="hospice-care.html">Hospice Care</a></li>
+                    <li><a href="consulting.html">Consulting</a></li>
+                    <li><a href="software.html">Hospice Software</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <button class="hamburger-menu" aria-label="Toggle Menu">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="parallax-section software-hero">
+            <div class="parallax-content">
+                <h1>The Modern EHR for Hospice Care.</h1>
+                <p>Our purpose-built hospice management platform unifies your workflows, enhances compliance, and empowers your team to focus on what matters most: the patient.</p>
+                 <div class="cta-buttons" style="margin-top: 2rem;">
+                    <a href="contact.html" class="btn btn-primary">Schedule a Demo</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-content">
+            <div class="content-block">
+                <h2>One Platform for Total Hospice Management</h2>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <h3>Patient & Care Management</h3>
+                        <ul>
+                            <li>Streamlined Intake & Admissions</li>
+                            <li>Intelligent Visit Scheduling</li>
+                            <li>Interdisciplinary Care Plans</li>
+                            <li>Real-time Team Collaboration</li>
+                        </ul>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Clinical Documentation</h3>
+                        <ul>
+                            <li>HOPE-Compliant Assessments</li>
+                            <li>Configurable Interdisciplinary Notes</li>
+                            <li>Electronic Medication & Treatment Orders</li>
+                            <li>Mobile-first Clinician Workflows</li>
+                        </ul>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Billing & Revenue Cycle</h3>
+                        <ul>
+                            <li>Automated Eligibility Checks</li>
+                            <li>One-click Claims Generation</li>
+                            <li>Denial Management & Analytics</li>
+                            <li>Hospice-Specific Billing Rules Engine</li>
+                        </ul>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Medication & DME</h3>
+                        <ul>
+                            <li>Medication Administration Records (MAR)</li>
+                            <li>Durable Medical Equipment Tracking</li>
+                            <li>Integrated Pharmacy Coordination</li>
+                            <li>Comfort Meds Protocol Management</li>
+                        </ul>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Quality & Compliance</h3>
+                        <ul>
+                            <li>Real-time QAPI Dashboards</li>
+                            <li>Automated Survey Readiness Reports</li>
+                            <li>Built-in Regulatory Guardrails</li>
+                            <li>Secure, Scalable & Interoperable</li>
+                        </ul>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Analytics & AI</h3>
+                        <ul>
+                            <li>Operational KPI Dashboards</li>
+                            <li>Predictive Census & Staffing Models</li>
+                            <li>AI-Assisted Documentation Review</li>
+                            <li>Proactive Compliance Insights</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <section class="cta-section">
+                <h2>See how AllWin can transform your agency.</h2>
+                <p>Get a personalized tour of the platform and discover how our software can help you achieve your goals.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Schedule a Demo</a>
+                    <a href="#" class="btn btn-secondary">Download Feature List</a>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AllWin. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
