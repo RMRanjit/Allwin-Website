@@ -20,9 +20,23 @@ body {
     margin: 0;
     line-height: 1.6;
     color: var(--text-color);
-    background-color: var(--white-color);
+    background: linear-gradient(270deg, #fefae0, #f0f4e4, #e6efe8, #dce8ec);
+    background-size: 800% 800%;
+    animation: gradient-animation 15s ease infinite;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 /* --- Header & Navigation --- */
@@ -92,7 +106,6 @@ section {
 
 /* --- Parallax Section --- */
 .parallax-section {
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -101,8 +114,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--white-color);
-    text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+    color: var(--text-color);
 }
 
 .parallax-section::after {
@@ -112,7 +124,7 @@ section {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(40, 54, 24, 0.4); /* Dark overlay using text color */
+    background: rgba(40, 54, 24, 0); /* Dark overlay using text color */
     z-index: 1;
 }
 
@@ -130,6 +142,26 @@ section {
     font-weight: 600;
     margin-bottom: 1.5rem;
     line-height: 1.2;
+}
+
+h1.hero-title {
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--primary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% auto;
+    animation: gradient-text-animation 10s ease infinite;
+}
+
+@keyframes gradient-text-animation {
+    0% {
+        background-position: 0% center;
+    }
+    50% {
+        background-position: 100% center;
+    }
+    100% {
+        background-position: 0% center;
+    }
 }
 
 .parallax-content p {
@@ -353,7 +385,7 @@ footer {
     }
     
     .home-hero {
-         background-image: url('https://via.placeholder.com/800x600/6a994e/FFFFFF?text=Serene+and+Supportive+Hospice+Care');
+         background-image: none;
     }
 
     .parallax-content h1, .content-block h2 {

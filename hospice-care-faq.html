@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ: Hospice Care for Families - AllWin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-content {
+            background-color: var(--background-color);
+            padding: 1px 0;
+        }
+        .content-block {
+            background-color: var(--white-color);
+            padding: 4rem 2rem;
+            margin: 4rem auto;
+            border-radius: 20px;
+            max-width: 1000px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.05);
+            text-align: left;
+        }
+        .content-block h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            color: var(--text-color);
+        }
+        .content-block h3 {
+            font-size: 1.8rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+        .faq-item {
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #eee;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-item h3 {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--text-color);
+            transition: color 0.3s ease;
+            font-size: 1.5rem;
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+        .faq-item h3:hover {
+            color: var(--primary-color);
+        }
+        .faq-item .answer {
+            display: none;
+            padding-top: 0.5rem;
+            line-height: 1.8;
+            color: var(--secondary-text-color);
+        }
+        .faq-item.active .answer {
+            display: block;
+        }
+        .faq-item h3::after {
+            content: '+';
+            font-size: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+        .faq-item.active h3::after {
+            content: '-';
+            transform: rotate(45deg);
+        }
+        .cta-section {
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><img src="images/Logo.png" alt="AllWin Logo"></div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="hospice-care.html">Hospice Care</a></li>
+                    <li><a href="consulting.html">Consulting</a></li>
+                    <li><a href="software.html">Hospice Software</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <button class="hamburger-menu" aria-label="Toggle Menu">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="parallax-section">
+            <div class="parallax-content">
+                <h1 class="hero-title">Frequently Asked Questions: Hospice Care for Families</h1>
+                <p>Compassionate answers to guide you through this important journey.</p>
+            </div>
+        </section>
+
+        <div class="page-content">
+            <div class="content-block">
+                <p>When a loved one is facing a life-limiting illness, many questions arise, and the path forward can feel uncertain. At AllWin, we believe that understanding and clear communication are paramount during such a sensitive time. We've compiled answers to the most common questions families have about hospice care, delivered with the empathy and clarity you deserve. Our goal is to empower you with information, so you can make informed decisions with peace of mind.</p>
+
+                <div class="faq-item">
+                    <h3>What exactly is hospice care?</h3>
+                    <div class="answer">
+                        <p>Hospice care is a specialized approach to care for individuals with a life-limiting illness. It focuses on providing comfort, managing pain and symptoms, and offering emotional and spiritual support to both the patient and their family. Unlike curative treatments, hospice prioritizes quality of life, allowing patients to live their remaining days with dignity and peace, often in the comfort of their own home or a familiar setting.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h3>When is the right time to consider hospice for my loved one?</h3>
+                    <div class="answer">
+                        <p>The "right" time is unique for everyone, but generally, hospice is considered when a physician believes a patient has a life expectancy of six months or less if their illness runs its natural course, and they are no longer seeking curative treatment. Common indicators include frequent hospitalizations, increased pain or uncontrolled symptoms, a decline in daily functioning, or a desire to focus on comfort over aggressive medical interventions. It's often beneficial to explore hospice options sooner rather than later to maximize the benefits of support and comfort.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What services are included in hospice care?</h3>
+                    <div class="answer">
+                        <p>AllWin's hospice care is comprehensive and tailored to individual needs. Our multidisciplinary team typically includes:</p>
+                        <ul>
+                            <li><strong>Physician Services:</strong> Medical oversight and coordination with your loved one's primary doctor.</li>
+                            <li><strong>Skilled Nursing Care:</strong> Regular visits by registered nurses to manage pain, symptoms, medications, and provide hands-on care.</li>
+                            <li><strong>Certified Nursing Assistants (CNAs):</strong> Assistance with personal care like bathing, dressing, and feeding.</li>
+                            <li><strong>Social Work Services:</strong> Emotional support, counseling, and assistance with practical needs, resources, and planning.</li>
+                            <li><strong>Spiritual Support:</strong> Chaplains and spiritual counselors offer comfort aligned with your family's beliefs.</li>
+                            <li><strong>Medications:</strong> Coverage for medications related to the hospice diagnosis for symptom management and comfort.</li>
+                            <li><strong>Medical Equipment & Supplies:</strong> Necessary equipment (e.g., hospital bed, oxygen) and supplies (e.g., wound dressings) are provided.</li>
+                            <li><strong>Therapies:</strong> Physical, occupational, or speech therapy if needed for comfort or to maintain functional abilities.</li>
+                            <li><strong>Bereavement Support:</strong> Counseling and support for families for at least a year after a loved one's passing.</li>
+                            <li><strong>Respite Care:</strong> Short-term inpatient care to provide caregivers with a much-needed break.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Where is hospice care provided?</h3>
+                    <div class="answer">
+                        <p>Hospice care is provided wherever the patient calls home. This most commonly includes their private residence, but can also extend to nursing homes, assisted living facilities, or, when necessary for acute symptom management, a dedicated inpatient hospice facility. Our goal is to ensure care is delivered in the most comfortable and familiar environment possible.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Will our family still be able to communicate with our loved one's regular doctor?</h3>
+                    <div class="answer">
+                        <p>Absolutely. AllWin's hospice team works closely and collaboratively with your loved one's primary care physician. We believe in continuity of care and ensure open lines of communication so that everyone involved in your loved one's health journey is informed and aligned with the care plan.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How is pain and symptom management approached in hospice?</h3>
+                    <div class="answer">
+                        <p>Pain and symptom management are central to hospice care. Our expert nurses and physicians are highly skilled in palliative care techniques, utilizing a range of medications and comfort measures to ensure your loved one remains as comfortable and pain-free as possible. We continuously monitor and adjust care plans to proactively address any discomfort, prioritizing their well-being above all.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Does choosing hospice mean giving up hope?</h3>
+                    <div class="answer">
+                        <p>Quite the contrary. Hospice redefines hope. It shifts focus from hoping for a cure that may no longer be attainable to hoping for peace, comfort, meaningful moments, and quality time with loved ones. It’s about ensuring the remaining journey is lived to its fullest, with dignity and without unnecessary suffering. Many families express that choosing hospice brought a profound sense of peace and a renewed focus on what truly matters.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How are hospice services paid for? Is it covered by insurance?</h3>
+                    <div class="answer">
+                        <p>Hospice care is a benefit covered by Medicare, Medicaid, and most private insurance plans. AllWin will work directly with your insurance provider to verify coverage and handle all billing. Generally, these benefits cover the costs of the hospice team's visits, medications related to the hospice diagnosis, medical equipment, and supplies. Our team will help you understand your specific benefits and answer any financial questions you may have.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Can we change our minds about hospice care?</h3>
+                    <div class="answer">
+                        <p>Yes, absolutely. The decision to receive hospice care is always yours, and it's never permanent. You or your loved one can choose to leave hospice care at any time, for any reason. If your loved one's condition improves or they decide to pursue curative treatment again, they can revoke their hospice benefit. If their condition later declines, they can return to hospice care if eligible.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How does AllWin support the family beyond the patient?</h3>
+                    <div class="answer">
+                        <p>At AllWin, we understand that a life-limiting illness affects the entire family. Our support extends to you through:</p>
+                        <ul>
+                            <li><strong>Education:</strong> Guidance on caregiving techniques, understanding the disease progression, and what to expect.</li>
+                            <li><strong>Emotional & Spiritual Counseling:</strong> Access to social workers and chaplains for individual or family support.</li>
+                            <li><strong>Respite Care:</strong> Short-term care for your loved one in an inpatient setting to provide you with a break.</li>
+                            <li><strong>Bereavement Services:</strong> Grief counseling, support groups, and resources for at least 13 months following your loved one's passing.</li>
+                            <li><strong>Practical Assistance:</strong> Help navigating community resources and end-of-life planning.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How is information shared and coordinated with our family?</h3>
+                    <div class="answer">
+                        <p>Transparency and communication are foundational at AllWin. We establish a primary point of contact for your family and ensure regular updates are provided in a manner that suits your preferences – whether through scheduled calls, in-person discussions during visits, or secure digital communications. We facilitate family meetings and ensure all relevant family members are kept informed and involved in care decisions, always respecting patient privacy and wishes.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What if my loved one's condition improves while on hospice?</h3>
+                    <div class="answer">
+                        <p>If your loved one's health improves and they no longer meet the eligibility criteria for hospice (i.e., their prognosis is no longer six months or less), they can be discharged from hospice care. This is a positive development, and we celebrate it with you! Should their condition decline again in the future, they can always re-enroll in hospice if they meet the criteria.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How quickly can hospice care begin once we make the decision?</h3>
+                    <div class="answer">
+                        <p>Once you make the decision and your physician provides certification, AllWin can typically initiate care very quickly, often within 24-48 hours, and sometimes even sooner in urgent situations. Our goal is to provide timely support and comfort as soon as it's needed. We'll guide you through each step of the admission process efficiently and compassionately.</p>
+                    </div>
+                </div>
+
+                <p>We hope these answers provide clarity and comfort. Choosing hospice care is a significant decision, and you don't have to navigate it alone. AllWin is here to partner with your family, providing expert care and heartfelt support every step of the way.</p>
+
+                <section class="cta-section">
+                    <h2>Still Have Questions? We're Here to Help.</h2>
+                    <p>Contact AllWin for a personal, confidential conversation about your loved one's unique needs and how we can provide the compassionate care and support your family deserves.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-primary">Speak With a Care Coordinator</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AllWin. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.querySelectorAll('.faq-item h3').forEach(item => {
+            item.addEventListener('click', event => {
+                item.parentNode.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
